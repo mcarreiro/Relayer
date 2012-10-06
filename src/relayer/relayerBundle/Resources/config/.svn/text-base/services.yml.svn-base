@@ -1,0 +1,7 @@
+parameters:
+#    relayerrelayer.example.class: relayer\relayerBundle\Example
+
+services:
+#    relayerrelayer.example:
+#        class: %relayerrelayer.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

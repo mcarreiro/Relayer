@@ -1,0 +1,88 @@
+{% extends app.request.isXmlHttpRequest ? '::baseAjax.html.twig' : '::base.html.twig' %}
+{% block body %}
+<script>
+    $(document).ready(function() {
+$(".service-box").css('visibility','hidden');
+var FIREFOX = /Firefox/i.test(navigator.userAgent);
+if (FIREFOX) {
+$(".serviceImage").hoverizr({speedOut: 1, speedIn:1});
+}
+$(".statsService").hover(function(){$(".service-box").css('visibility','hidden');$('.statsBox').css('visibility','visible');});
+$(".muestraService").hover(function(){$(".service-box").css('visibility','hidden');$('.muestraBox').css('visibility','visible');});
+$(".videoService").hover(function(){$(".service-box").css('visibility','hidden');$('.videoBox').css('visibility','visible');});
+$(".socialService").hover(function(){$(".service-box").css('visibility','hidden');$('.socialBox').css('visibility','visible');});
+$(".adsService").hover(function(){$(".service-box").css('visibility','hidden');$('.adssBox').css('visibility','visible');});
+});
+</script>    
+<div class="contenido-servicio">
+    <div class="wrapper">
+        <div class="service-box-wrapper leftColumn"> 
+            <div class="service-box service-box-left statsBox">
+                <div class="titulo-service service-titulo">STATS</div>
+                <div class="service-text">
+                    Examiná quienes miran tu web, cuándo y dónde, de forma eficaz y actualizada
+                </div>
+            </div>
+
+            <div class="service-box service-box-left muestraBox">
+                <div class="titulo-service service-titulo">MUESTRA</div>
+                <div class="service-text">
+                    Creá y customizá tu propio portafolio
+                </div>
+            </div>
+                
+            <div class="service-box service-box-left videoBox">
+                <div class="titulo-service service-titulo">VIDEO</div>
+                <div class="service-text">
+                    Subí y compartí tus videos desde tu web
+                </div>
+            </div>
+        </div>
+            <div class="service-image-wrapper">
+                <div class="service-image statsService">
+                    <img class="serviceImage" src="{{ asset('images/services/stats.jpg') }}" alt="STATS"/>
+                </div>
+            
+                <div class="service-image muestraService">
+                    <img  class="serviceImage" src="{{ asset('images/services/portfolio.jpg') }}" alt="MUESTRA"/>
+                </div>
+            
+                <div class="service-image socialService">
+                    <img  class="serviceImage" src="{{ asset('images/services/social.jpg') }}" alt="SOCIAL"/>
+                </div>
+
+                <div class="service-image adsService">
+                    <img  class="serviceImage" src="{{ asset('images/services/ads.jpg') }}" alt="ADSENSE"/>
+                </div>
+
+                <div class="service-image videoService">
+                    <img  class="serviceImage" src="{{ asset('images/services/video.jpg') }}" alt="VIDEO"/>
+                </div>
+        </div>
+        
+            <div class="service-box-wrapper rightColumn"> 
+                <div class="service-box service-box-right socialBox">
+                <div class="titulo-service service-titulo">SOCIAL</div>
+                <div class="service-text">
+                    Optimizamos tus visitas en redes sociales como: <br/> 
+                    <div class="service-items-social">
+                        Facebook <br/>
+                        Twitter <br/>
+                        Google +  <br/>
+                        YouTube <br/>
+                        Tumblr <br/>
+                        Instagram <br/>
+                        Flickr
+                    </div>
+                </div>
+            </div>
+                <div class="service-box service-box-right adssBox">
+                <div class="titulo-service service-titulo">$$$</div>
+                <div class="service-text">
+                    Monetizá tu sitio con publicidad
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+{% endblock %}

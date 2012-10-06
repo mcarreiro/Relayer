@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/!svn/ver/2/trunk/web
+END
+app_dev.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/2/trunk/web/app_dev.php
+END
+app.php
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/2/trunk/web/app.php
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/web/robots.txt
+END
+apple-touch-icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/web/apple-touch-icon.png
+END
+faviconviejo.ico
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/2/trunk/web/faviconviejo.ico
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/web/.htaccess
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/2/trunk/web/config.php
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/3/trunk/web/favicon.ico
+END
+favicona.ico
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/2/trunk/web/favicona.ico
+END
+faviconb.ico
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/4/trunk/web/faviconb.ico
+END

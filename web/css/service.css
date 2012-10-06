@@ -1,0 +1,146 @@
+/*Wrappers, titulo y texto*/
+
+.service-image-wrapper{
+    width: 660px;
+    float: left;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.service-titulo{
+    font-size:28px;
+    color:white;
+}
+
+.service-text{
+    margin-top: 8px;
+    font-family:arial;
+    font-size:14px;
+    color:black;
+}
+
+.service-box-wrapper{
+    width: 220px;
+    float: left;    
+    position: relative;
+}
+
+/*Caja*/
+.service-box{
+    background: #cccccc;
+    height: auto;
+    width: 150px; 
+    margin: 15px;
+    position: relative; 
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/*Caja Izquierda*/
+.service-box-left:after{
+    content: '';
+    width: 0; 
+    height: 0; 
+    top: 50%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: 180px;
+    position: absolute;
+    border-left: 10px solid #cccccc;
+}
+
+/*Caja Derecha*/
+.service-box-right{
+    float: right;
+}
+
+.service-box-right:before{
+    content: '';
+    width: 0; 
+    height: 0; 
+    top: 50%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    right: 180px;
+    position: absolute;
+    border-right:10px solid #cccccc;
+}
+/*Especificaciones de cajas*/
+.statsBox:after{
+    top: 25%;
+}
+/*.statsBox{
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 1s linear;
+}*/
+.muestraBox{
+    margin-top: 50px;   
+}
+
+.videoBox{
+    top: 60px;
+}
+
+.videoBox:after{
+    top: 35%;
+}
+
+.socialBox:before{
+    top: 45%;
+}
+
+.adssBox{
+    margin-top: 50px;
+}
+
+/*Especificaciones de imagenes*/
+.service-image{
+    float: left;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    position: relative;
+}
+
+.service-image:hover {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+}
+
+.socialService, .adsService{
+    margin-left: 11px;
+}
+
+.adsService{
+    float:right;
+}
+
+.videoService{
+    margin-top: 4px;
+}
+
+/*.statsService:hover + .statsBox{visibility:visible; opacity:1;}
+
+.muestraService:hover + .muestraBox {
+    display:block;  
+}​
+
+.videoService:hover + .videoBox {
+    display:block;  
+}​
+
+.socialService:hover + .socialBox {
+    display:block;  
+}​
+
+.adsService:hover + .adssBox {
+    display:block;  
+}    */

@@ -1,0 +1,98 @@
+{% extends app.request.isXmlHttpRequest ? '::baseAjax.html.twig' : '::base.html.twig' %}
+{% block body %}
+<script type="text/javascript">
+			$(function(){
+			
+			    // ----- Label effect ----- //
+			    
+				$("label").inFieldLabels();
+				
+			    // ----- Form submissions & error handeling ----- //
+			
+				$("#email").validate({
+				   errorClass: "form_error",
+                                                                           showErrors: function(errorMap, errorList) {
+                                                                            this.defaultShowErrors();
+                                                                            },
+				   submitHandler: function(form) {
+				   		$(".ajaxLoader").css('visibility','visible');
+						jQuery(form).ajaxSubmit({
+							target: "#email .message",
+							clearForm: true,
+							success: function() { 
+						        $(".ajaxLoader").css('visibility','hidden');
+						        $("#email .message").css('display', 'block');
+                                                                                                                    $(".email-success").css('visibility','visible');
+						    } 			
+					    });
+				   }
+				});
+                                jQuery.extend(jQuery.validator.messages, {
+    required: "Este campo es requerido.",
+    email: "Ingresá un mail válido.",
+    url: "Please enter a valid URL.",
+    date: "Please enter a valid date.",
+    dateISO: "Please enter a valid date (ISO).",
+    number: "Please enter a valid number.",
+    digits: "Please enter only digits.",
+    creditcard: "Please enter a valid credit card number.",
+    equalTo: "Please enter the same value again.",
+    accept: "Please enter a value with a valid extension.",
+    maxlength: jQuery.validator.format("Please enter no more than {0} characters."),
+    minlength: jQuery.validator.format("Please enter at least {0} characters."),
+    rangelength: jQuery.validator.format("Please enter a value between {0} and {1} characters long."),
+    range: jQuery.validator.format("Please enter a value between {0} and {1}."),
+    max: jQuery.validator.format("Please enter a value less than or equal to {0}."),
+    min: jQuery.validator.format("Please enter a value greater than or equal to {0}.")
+});
+			});
+		</script>
+<div class="contenido">
+    <div class="form-wrapper">
+			<form action="{{ path('sendEmail') }}" method="post" id="email">
+				<fieldset>
+					<div class="message"><p class="success">Your information has been submitted. And we are reading your email right now. Honestly we are!!</p></div>
+					<div class="formfield">
+						<input type="text"class="text required" name="contact_who" id="contact_who" value="Nombre" 
+                       onclick="if(this.value=='Nombre'){this.value=''}" onblur="if(this.value==''){this.value='Nombre'}">
+					</div><!-- /.formfield -->
+					<div class="formfield">
+
+						<input type="text" class="text required email" name="contact_sendto" id="contact_sendto" value="Email" 
+                       onclick="if(this.value=='Email'){this.value=''}" onblur="if(this.value==''){this.value='Email'}">
+					</div><!-- /.formfield -->
+					<div class="formfield">
+
+						<input type="text" class="text required" name="contact_subject" id="contact_subject" value="Asunto" 
+                       onclick="if(this.value=='Asunto'){this.value=''}" onblur="if(this.value==''){this.value='Asunto'}">
+					</div><!-- /.formfield -->
+					<div class="formfield">
+						
+						<textarea name="contact_message" class="required" id="contact_message" value="Mensaje" 
+                       onclick="if(this.value=='Mensaje'){this.value=''}" onblur="if(this.value==''){this.value='Mensaje'}"></textarea>
+					</div><!-- /.formfield -->
+				</fieldset>
+				<div class="formfield">
+					<input type="submit" class="button" value="Enviar mensaje" />
+				</div><!-- /.formfield -->
+			</form><!-- /#email -->	
+		</div> <!-- .form-wrapper -->
+    
+<div class="titulo-contenido">
+        Contacto
+            <div class="text">
+                Para cualquier consulta que tengas no dudes en enviarnos tu mensaje.<br/>
+                Seguinos en Facebook y Google Plus para tips y updates.
+            </div>
+ 
+            <div class="social-text">
+                <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/FB.png') }}" alt="FB"/></a>
+                <a href="https://plus.google.com/117218902755088909505/posts" target="_blank"><img src="{{ asset('images/GP.png') }}" alt="G+"/></a>
+            </div>
+        <img style="visibility: hidden" class="ajaxLoader" src="{{asset('images/ajax-loader.gif')}}"/>
+        <div class="email-success">
+            Tu mail fue enviado correctamente! A la brevedad nos estaremos comunicando.
+             </div>
+    </div>      
+</div>
+{% endblock %}

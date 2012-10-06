@@ -1,0 +1,25 @@
+{% extends app.request.isXmlHttpRequest ? '::baseAjax.html.twig' : '::base.html.twig' %}
+{% block body %}
+
+<script>
+var $container = $('#container');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.box'
+  });
+});
+</script>
+<div class="contenido">
+    <div id="container" class="clearfix">
+        {% for i in range(0, 2) %}
+            <div class="box photo col3">
+                <a class="imagen-link" href="{{images[i]}}" target="_blank"><img src="{{asset('images/project/' ~ i~'.jpg' ) }}" alt="G+"/></a>
+            </div>
+        {% endfor %}
+            <div class="box photo col3">
+                <a class="imagen-link" href="#" name="{{ path('contacto') }}" onclick="getEpisodes('3',this.name);"><img src="{{asset('images/tu-proyecto-aca') }}" alt="Tu Proyecto Aca"/></a>
+            </div>
+    </div>
+</div>
+{% endblock %}

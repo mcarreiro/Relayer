@@ -1,0 +1,23 @@
+home:
+    pattern:  /
+    defaults: { _controller: relayerrelayerBundle:Default:index }   
+    
+homeAjax:
+    pattern:  /home
+    defaults: { _controller: relayerrelayerBundle:Default:index }         
+
+proyectos:
+    pattern:  /proyectos
+    defaults: { _controller: relayerrelayerBundle:Default:projects }         
+
+contacto:
+    pattern:  /contacto
+    defaults: { _controller: relayerrelayerBundle:Default:contact }         
+    
+servicios:
+    pattern:  /servicios
+    defaults: { _controller: relayerrelayerBundle:Default:services }         
+
+sendEmail:
+        pattern:  /sendEmail
+        defaults: { _controller: relayerrelayerBundle:Default:sendEmail }   

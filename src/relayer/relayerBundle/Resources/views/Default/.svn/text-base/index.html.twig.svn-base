@@ -1,0 +1,33 @@
+{% extends app.request.isXmlHttpRequest ? '::baseAjax.html.twig' : '::base.html.twig' %}
+{% block body %}
+<div class="contenido">
+    <div class="titulo-contenido">
+        Relayer Argentina, <br/>tu solución en la web
+            <div class="text">
+                Relayer es un espacio dedicado a crear sitios para optimizar tu emprendimiento en internet.
+                Además de proveer las herramientas necesarias que hoy en día son estándar en cualquier empresa
+                con plataforma web, nosotros ofrecemos capacitación, asesoramiento técnico y hosting.<br/><br/>
+                No dudes en contactarnos y empezar a desarrollarse en internet!
+            </div>
+            <div class="social-text">
+                <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/FB.png') }}" alt="FB"/></a>
+                <a href="https://plus.google.com/117218902755088909505/posts" target="_blank"><img src="{{ asset('images/GP.png') }}" alt="G+"/></a>
+            </div>
+    </div>      
+        
+    
+    <div class="ribbon-imagen">
+        <strong class="ribbon-imagen-content">
+            <img class="ribbon-imagen-content" src="{{ asset('images/home.png') }}" width="600px" alt="Lolba"/>
+        </strong>
+    </div>
+        
+    <div class="ribbon">
+        <strong class="ribbon-content">
+            <a class="ribbon-item" href="#" name="{{ path('proyectos') }}" onclick="getEpisodes('2',this.name);">Proyectos</a><br/>
+            <a class="ribbon-item" href="#" name="{{ path('servicios') }}" onclick="getEpisodes('4',this.name);">Servicios</a><br/>
+            <a class="ribbon-item" href="#" name="{{ path('contacto') }}" onclick="getEpisodes('3',this.name);">Contacto</a>
+        </strong>
+    </div>
+</div>
+{% endblock %}

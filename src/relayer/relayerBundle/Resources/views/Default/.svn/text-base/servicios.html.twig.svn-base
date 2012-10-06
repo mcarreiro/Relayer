@@ -1,0 +1,84 @@
+{% extends app.request.isXmlHttpRequest ? '::baseAjax.html.twig' : '::base.html.twig' %}
+{% block body %}
+<div class="contenido-servicio">
+    <div class="wrapper">
+    <div class="service">
+        <div class="service-titulo">
+            STATS
+        </div>
+            <div class="service-text">
+                Ofrecemos monitoreo sobre tu página y te enseñamos a verlo por vos mismo. Examiná quienes
+                miran tu sitio, cuándo y dónde de forma eficaz y actualizada.
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+        
+            <div class="service">
+        <div class="service-titulo">
+            MUESTRA
+        </div>
+            <div class="service-text">
+                Traenos tus ideas y la puta que te parió me chupa tu idea. La mía es mejor, comprá!
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+        
+            <div class="service">
+        <div class="service-titulo">
+            STATS
+        </div>
+            <div class="service-text">
+                Ofrecemos monitoreo sobre tu página y te enseñamos a verlo por vos mismo. Examiná quienes
+                miran tu sitio, cuándo y dónde de forma eficaz y actualizada.
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+            
+                        <div class="service">
+        <div class="service-titulo">
+            STATS
+        </div>
+            <div class="service-text">
+                Ofrecemos monitoreo sobre tu página y te enseñamos a verlo por vos mismo. Examiná quienes
+                miran tu sitio, cuándo y dónde de forma eficaz y actualizada.
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+            
+                                    <div class="service">
+        <div class="service-titulo">
+            STATS
+        </div>
+            <div class="service-text">
+                Ofrecemos monitoreo sobre tu página y te enseñamos a verlo por vos mismo. Examiná quienes
+                miran tu sitio, cuándo y dónde de forma eficaz y actualizada.
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+            
+                                    <div class="service">
+        <div class="service-titulo">
+            STATS
+        </div>
+            <div class="service-text">
+                Ofrecemos monitoreo sobre tu página y te enseñamos a verlo por vos mismo. Examiná quienes
+                miran tu sitio, cuándo y dónde de forma eficaz y actualizada.
+            </div>
+            <div class="imagenes-servicios">
+                 <a href="https://www.facebook.com/pages/Relayer/343866349030802" target="_blank"  alt="FB"><img src="{{ asset('images/stats.png') }}" alt="FB"/></a>
+            </div>
+    </div>
+            
+        </div>
+</div>
+{% endblock %}

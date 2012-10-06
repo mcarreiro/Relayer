@@ -1,0 +1,284 @@
+/* 
+    Document   : main
+    Created on : August 4, 2012, 4:52:45 PM
+    Author     : mcarreiro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    background-color: #e6e6e6;
+    font-size: 17px;
+    height:500px;
+    font-family: arial;
+}
+
+.text{
+    margin-top: 35px;
+    font-family:arial;
+    font-size:18px;
+    color:#a9a9a9;
+    width: 450px;
+}
+
+.wrapper{
+        width: 1100px;
+        position: relative;
+        margin:auto;
+}
+
+.menu{    
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+.contenido{
+    min-height: 470px;
+    height: auto;
+    position: relative;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.contenido-servicio{
+    min-height: 470px;
+    height: auto;
+    position: relative;
+    overflow:auto;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.menuSelector{
+    z-index:1;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 2.5px;
+    background-color: #c8c8c8;
+    height: 34px;
+    width: 74px;
+    position: relative;
+    top: 2px;
+    left:26px;
+    line-height: 24px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #5986b2;
+    background-image: -webkit-gradient(linear,0% 0,0% 100%,from(#7aa3cc),to(#5986b2));
+}
+
+li{
+    display:inline;
+    margin: -21px 2px 0;
+    float: left;
+    position: relative;
+    z-index: 2;
+    height: 27px;
+}
+
+.buttons{
+    z-index: 0;
+}
+
+.menuButton{
+    display: block;
+    height: 24px;
+    line-height: 12px;
+    padding: 0 40px;
+    color: #666666;
+/*    text-shadow: 0 1px 0 grey;*/
+    text-decoration: none;
+
+}
+
+.footer{
+    position:relative;
+    font-size: 12px;
+    color: gray;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+.maxi-juan-fran-agus-franquito-angel-putos{
+    height: 20px;
+}
+
+.social-text{
+    margin-top: 40px; 
+}
+
+.ribbon {
+ font-size: 14px !important;
+ width: 110px;
+ position: relative;
+ background: #b2a1b2;
+ color: #fff;
+ padding: 1em 2em; 
+ margin-top: -33%;
+ right: -86.2%;
+/* display: inline-block;*/
+/* z-index: 4;*/
+}
+
+.ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: inline;
+ border-style: solid;
+ border-color: #977e93 transparent transparent transparent;
+ bottom: -1em;
+  right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+
+
+
+
+
+
+.box {
+  margin:  5px;
+  padding: 5px;
+  background: #e6e6e6;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+    -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.box img,
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rtl .box {
+  float: right;
+  text-align: right; 
+  direction: rtl;
+}
+.col3 { width: 346px; }
+.col3 img { max-width: 346px; }
+
+
+
+
+/*.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }*/
+
+
+
+
+
+
+
+
+
+.ribbon-imagen {
+    font-size: 16px !important;
+    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+/*    width: 100px;*/
+    position: relative;
+    width: 60%;
+/*    background: #ba89b6;*/
+    color: #fff;
+/*    text-align: center;*/
+    left: -1.5%;
+    top: 20px;
+    display: inline;
+/*    padding: 1em 1em;  Adjust to suit */
+z-index: 1;
+}
+.ribbon-imagen .ribbon-imagen-content:before {
+    content: "";
+    position: absolute;
+    display: inline;
+    border-style: solid;
+    border-color: #aeaeae transparent transparent transparent;
+    bottom: -0.75em;
+    left: 0;
+    z-index: 1;
+    border-width: 1em 0 0 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ribbon-item{
+     text-decoration: none;
+/*     text-shadow: 0 1px 0 grey;*/
+    position: relative;
+    color: inherit;
+     text-align: left;
+     font-weight: normal;
+     margin-top: 13px;
+}
+
+.titulo-contenido{
+    font-size:30px;
+    color:#666666;
+    top: 30px;
+    right: 16%;
+    width: 320px;
+    position: relative;
+    float:right;
+}
+
+.service-titulo{
+    font-size:30px;
+    color:#666666;
+}
+
+.service{
+    margin: 20.3px;
+    padding: 9px 9px 0px 9px;
+    background: #e6e6e6;
+    font-size: 11px;
+    float: left;
+    height: 338px;
+    width: 308px;
+}
+
+.service-text{
+    margin-top: 15px;
+    font-family:arial;
+    font-size:16px;
+    color:#a9a9a9;
+}
+
+.imagenes-servicios{
+    margin-top: 20px;
+    text-align: center;
+}

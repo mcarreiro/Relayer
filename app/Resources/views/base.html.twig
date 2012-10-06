@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="relayer, relayerWeb, solucion, sitio, web, portfolio, pagina, proyectos" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="title" content="Relayer" />
+        <meta name="description" content="Relayer es un espacio dedicado a crear sitios para optimizar tu emprendimiento en internet. 
+              Además de proveer las herramientas necesarias que hoy en día son estándar en cualquier empresa con plataforma web, nosotros ofrecemos capacitación, asesoramiento técnico y hosting. " />
+        <meta name="author" content="Martín Carreiro y Nicolás Amelio Ortiz" />
+        <meta name="robots" content="all" />
+        <meta property="og:title" content="Relayer"/> 
+        <meta property="og:image" content="http://relayer.com.ar{{asset('images/logo-web-grande-gato.png') }}"/>
+        <meta property="og:url" content=" http://relayer.com.ar/" />
+        <meta property="og:site_name" content="Relayer"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Relayer es un espacio dedicado a crear sitios para optimizar tu emprendimiento en internet. 
+              Además de proveer las herramientas necesarias que hoy en día son estándar en cualquier empresa con plataforma web, nosotros ofrecemos capacitación, asesoramiento técnico y hosting. "/>
+        <title>{% block title %}Relayer{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('css/form.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('css/service.css') }}" rel="stylesheet" type="text/css" />
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-1.7.1.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery-ui-1.8.21.custom.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery.masonry.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery.form.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery.validate.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery.infieldlabel.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/jquery.hoverizr.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('js/main.js') }}" type="text/javascript"></script>
+        {% endblock %}
+            <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
+            <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35047851-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <a href="#" name="{{ path('home') }}" onclick="getEpisodes('1',this.name);"><img alt="relayer" src="{{ asset('images/logo-web.png') }}" /></a>
+        <div class="social">
+        <!-- Aca va lo social -->    
+        </div>
+            <div class="menu">
+                <div class=buttons>
+                    <ul>
+                    <div class="menuSelector"></div>
+                    <li id="1">    
+                        <a href="#" name="{{ path('home') }}" style="color: #f3f3f3;"class="menuButton"  value="1" >Home</a>
+                    </li>  
+                    <li id="2">
+               <a href="#" name="{{ path('proyectos') }}" class="menuButton" value="2" >Proyectos</a>
+                    </li>
+                    <li id="4">
+                    <a href="#" name="{{ path('servicios') }}" class="menuButton" value="4" >Servicios</a>
+                    </li>
+                   <li id="3">
+                    <a href="#" name="{{ path('contacto') }}" class="menuButton" value="3" >Contacto</a>
+                    </li>
+                    
+                    </ul>
+            </div>
+            {% block body %}{% endblock %}
+                <div class="footer">
+                    Relayer | &#64 Martín Carreiro & Nicolás Amelio-Ortiz | 2012 | Todos los derechos reservados
+                </div>     
+                    <div class="maxi-juan-fran-agus-franquito-angel-putos"></div>
+        </div>
+        </div>
+    </body>
+</html>
